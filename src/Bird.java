@@ -1,7 +1,10 @@
-public class Bird {
-  // TODO fix class declaration
+import java.lang.reflect.Modifier;
+
+public abstract class Bird {
 
   public void eat() {
-    // TODO print a message that bird is eating
+    System.out.println("The bird is eating");
+    System.out.println(Modifier.isAbstract(Bird.class.getModifiers()) + "THE RESULT OF THE TEST");
   }
 }
+
